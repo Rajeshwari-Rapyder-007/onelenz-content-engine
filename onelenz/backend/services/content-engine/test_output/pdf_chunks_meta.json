@@ -1,0 +1,233 @@
+[
+  {
+    "index": 0,
+    "element_type": "TableItem",
+    "headings": [
+      "Table of Contents"
+    ],
+    "captions": [],
+    "page_no": 1,
+    "raw_tokens": 22,
+    "ctx_tokens": 25
+  },
+  {
+    "index": 1,
+    "element_type": "TableItem",
+    "headings": [
+      "Table of Contents"
+    ],
+    "captions": [],
+    "page_no": 1,
+    "raw_tokens": 24,
+    "ctx_tokens": 27
+  },
+  {
+    "index": 2,
+    "element_type": "TableItem",
+    "headings": [
+      "Table of Contents"
+    ],
+    "captions": [],
+    "page_no": 1,
+    "raw_tokens": 27,
+    "ctx_tokens": 30
+  },
+  {
+    "index": 3,
+    "element_type": "TableItem",
+    "headings": [
+      "Table of Contents"
+    ],
+    "captions": [],
+    "page_no": 1,
+    "raw_tokens": 14,
+    "ctx_tokens": 17
+  },
+  {
+    "index": 4,
+    "element_type": "DocItem",
+    "headings": [
+      "Introduction"
+    ],
+    "captions": [],
+    "page_no": 2,
+    "raw_tokens": 123,
+    "ctx_tokens": 124
+  },
+  {
+    "index": 5,
+    "element_type": "DocItem",
+    "headings": [
+      "Machine Learning Case Study Qualification"
+    ],
+    "captions": [],
+    "page_no": 2,
+    "raw_tokens": 103,
+    "ctx_tokens": 108
+  },
+  {
+    "index": 6,
+    "element_type": "DocItem",
+    "headings": [
+      "Custom Model Use Cases"
+    ],
+    "captions": [],
+    "page_no": 2,
+    "raw_tokens": 136,
+    "ctx_tokens": 140
+  },
+  {
+    "index": 7,
+    "element_type": "DocItem",
+    "headings": [
+      "ML Ops Use Cases"
+    ],
+    "captions": [],
+    "page_no": 3,
+    "raw_tokens": 64,
+    "ctx_tokens": 68
+  },
+  {
+    "index": 8,
+    "element_type": "DocItem",
+    "headings": [
+      "Comprehend & Comprehend Medical"
+    ],
+    "captions": [],
+    "page_no": 3,
+    "raw_tokens": 99,
+    "ctx_tokens": 103
+  },
+  {
+    "index": 9,
+    "element_type": "DocItem",
+    "headings": [
+      "Forecast"
+    ],
+    "captions": [],
+    "page_no": 3,
+    "raw_tokens": 120,
+    "ctx_tokens": 121
+  },
+  {
+    "index": 10,
+    "element_type": "DocItem",
+    "headings": [
+      "Fraud Detector"
+    ],
+    "captions": [],
+    "page_no": 4,
+    "raw_tokens": 95,
+    "ctx_tokens": 97
+  },
+  {
+    "index": 11,
+    "element_type": "DocItem",
+    "headings": [
+      "Kendra"
+    ],
+    "captions": [],
+    "page_no": 4,
+    "raw_tokens": 51,
+    "ctx_tokens": 52
+  },
+  {
+    "index": 12,
+    "element_type": "DocItem",
+    "headings": [
+      "Lex"
+    ],
+    "captions": [],
+    "page_no": 4,
+    "raw_tokens": 86,
+    "ctx_tokens": 87
+  },
+  {
+    "index": 13,
+    "element_type": "DocItem",
+    "headings": [
+      "Personalize"
+    ],
+    "captions": [],
+    "page_no": 4,
+    "raw_tokens": 123,
+    "ctx_tokens": 124
+  },
+  {
+    "index": 14,
+    "element_type": "DocItem",
+    "headings": [
+      "Polly"
+    ],
+    "captions": [],
+    "page_no": 5,
+    "raw_tokens": 74,
+    "ctx_tokens": 75
+  },
+  {
+    "index": 15,
+    "element_type": "DocItem",
+    "headings": [
+      "Rekognition"
+    ],
+    "captions": [],
+    "page_no": 5,
+    "raw_tokens": 91,
+    "ctx_tokens": 92
+  },
+  {
+    "index": 16,
+    "element_type": "DocItem",
+    "headings": [
+      "Textract"
+    ],
+    "captions": [],
+    "page_no": 5,
+    "raw_tokens": 103,
+    "ctx_tokens": 104
+  },
+  {
+    "index": 17,
+    "element_type": "DocItem",
+    "headings": [
+      "Transcribe & Transcribe Medical"
+    ],
+    "captions": [],
+    "page_no": 6,
+    "raw_tokens": 124,
+    "ctx_tokens": 128
+  },
+  {
+    "index": 18,
+    "element_type": "DocItem",
+    "headings": [
+      "Translate"
+    ],
+    "captions": [],
+    "page_no": 6,
+    "raw_tokens": 44,
+    "ctx_tokens": 45
+  },
+  {
+    "index": 19,
+    "element_type": "DocItem",
+    "headings": [
+      "Machine Learning Competency Technical Validation Prep"
+    ],
+    "captions": [],
+    "page_no": 6,
+    "raw_tokens": 307,
+    "ctx_tokens": 313
+  },
+  {
+    "index": 20,
+    "element_type": "DocItem",
+    "headings": [
+      "Resources"
+    ],
+    "captions": [],
+    "page_no": 7,
+    "raw_tokens": 78,
+    "ctx_tokens": 79
+  }
+]
