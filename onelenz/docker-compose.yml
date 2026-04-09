@@ -1,9 +1,33 @@
+version: "3.9"
+
 services:
+
+  postgres:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: onelenz
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/migrations:/docker-entrypoint-initdb.d/
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d onelenz"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
 
   redis:
     image: redis:8.6-alpine
     ports:
       - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
 
   auth-service:
     build:
@@ -13,6 +37,14 @@ services:
       - "8000:8000"
     env_file:
       - backend/.env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:postgres@postgres:5432/onelenz
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
 
   email-connector-api:
     build:
@@ -23,8 +55,14 @@ services:
     env_file:
       - backend/.env
     environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:postgres@postgres:5432/onelenz
       REDIS_URL: redis://redis:6379/0
       CELERY_BROKER_URL: redis://redis:6379/1
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
 
   email-connector-worker:
     build:
@@ -34,5 +72,15 @@ services:
     env_file:
       - backend/.env
     environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:postgres@postgres:5432/onelenz
       REDIS_URL: redis://redis:6379/0
       CELERY_BROKER_URL: redis://redis:6379/1
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
+
